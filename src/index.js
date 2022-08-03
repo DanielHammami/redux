@@ -9,3 +9,7 @@ const toLowerCase = str => str.toLowerCase()
 
 const transform = pipe(trim, toLowerCase, wrap("div"))
 console.log(transform(input))
+
+function myFunction(number) {
+    return number * 2
+}
