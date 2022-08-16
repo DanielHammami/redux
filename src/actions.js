@@ -13,7 +13,7 @@ export function bugResolved(id) {
   return {
     type: actions.BUG_RESOLVED,
     payload: {
-      resolved: true,
+      id,
     },
   };
 }
