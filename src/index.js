@@ -7,9 +7,9 @@ store.subscribe(() => {
   console.log("Store changed!");
 });
 
-store.dispatch(actions.bugAdded("Bug A"));
-store.dispatch(actions.bugAdded("Bug B"));
-store.dispatch(actions.bugAdded("Bug C"));
-store.dispatch(actions.bugResolved(1));
+store.dispatch(actions.bugAdded({ description: "Bug A" }));
+store.dispatch(actions.bugAdded({ description: "Bug B" }));
+store.dispatch(actions.bugAdded({ description: "Bug C" }));
+store.dispatch(actions.bugResolved({ id: 1 }));
 
 console.log(store.getState());
